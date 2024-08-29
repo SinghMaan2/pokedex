@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="pokedex" style="transition: all 0.5s;">
+
+        <!-- CARD1  -->
+        <div class="card1">
+
+            <div class="upperPortion">
+                <div class="heading">Pokédex</div>
+                <h5>Search for a Pokemon by name or using its National Pokedex Number</h5>
+                <div class="searchSection">
+                    <div class="searchBar">
+                        <input type="text" placeholder="Name or number">
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="listings">
+                <div class="pokeBox grass">
+                    <img src="img/bulbasaur.png">
+                    <div class="pokeName">Bulbasaur</div>
+                    <div class="pokeNumber">001</div>
+                </div>
+                <div class="pokeBox grass">
+                    <img src="img/ivysaur.png">
+                    <div class="pokeName">Ivysaur</div>
+                    <div class="pokeNumber">002</div>
+                </div>
+                <div class="pokeBox grass">
+                    <img src="img/venusaur.png">
+                    <div class="pokeName">Venusaur</div>
+                    <div class="pokeNumber">003</div>
+                </div>
+                <div class="pokeBox fire">
+                    <img src="img/charmander.png">
+                    <div class="pokeName">Charmander</div>
+                    <div class="pokeNumber">004</div>
+                </div>
+                <div class="pokeBox fire">
+                    <img src="img/charmeleon.png">
+                    <div class="pokeName">Charmeleon</div>
+                    <div class="pokeNumber">005</div>
+                </div>
+                <div class="pokeBox fire">
+                    <img src="img/charizard.png">
+                    <div class="pokeName">Charizard</div>
+                    <div class="pokeNumber">006</div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CARD2  -->
+
+        <div class="card2">
+            <div class="name">Bulbasaur</div>
+            <div class="number">001</div>
+            <div class="pokeimage">
+                <img src="img/bulbasaur.png">
+            </div>
+            <div class="details">
+                <div class="infoMenu">
+                    <h5 style="width: 100%; margin-bottom: 5px; text-align: center;">Details</h5>
+                </div>
+            </div>
+
+            <div class="detailBox">
+                <div class="Detail box" style="color: purple;">
+                    <div id="heightD">
+                        Height
+                        <div class="height" style="color: black;"></div>
+                    </div>
+                    <div id="weightD">
+                        Weight
+                        <div class="weight" style="color: black;"></div>
+                    </div>
+                    <div id="typeD"></div>
+                    <div id="abilitiesD" style="display: flex;
+                    flex-direction: column; padding: 0px 5px;">
+                    Abilities</div>
+                </div>
+            </div>
+        </div>
+        <div id="PreviousPage">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+    </div>
+
+    </div>
+    <script src="p.js"></script>
+</body>
+
+</html>
