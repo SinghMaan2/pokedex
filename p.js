@@ -1,4 +1,4 @@
-let pokeNumber;
+let pokeNumber,ID;
 let searchBar = document.querySelector(".searchBar input");
 let Button = document.querySelector(".searchSection i");
 let pic = document.querySelector('img');
@@ -23,6 +23,7 @@ async function getdata(pokeNumber) {
     let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeNumber}`);
     let data = await response.json();
     console.log(data);
+    ID = data.id;
     
     headingName.innerText = data.name;
     headingNumber.innerText = data.id;
@@ -120,6 +121,11 @@ async function getdata(pokeNumber) {
             newHeading.style.backgroundColor = '#D56723';
             pokePicBack.style.backgroundColor = '#D56723';
         }
+        else if(newHeading.innerText == 'normal')
+        {
+            newHeading.style.backgroundColor = 'black';
+            pokePicBack.style.backgroundColor = '#D56723';
+        }
         newHeading.style.margin = '5px auto';
         newHeading.style.width = '70px';
         newHeading.style.borderRadius = '5px';
@@ -142,11 +148,19 @@ async function getdata(pokeNumber) {
     height.innerText = `  ${heighinft}'${heightininch}"`; 
     weight.innerText = `  ${weightinkg}Kg`; 
     
-
-    // pic.setAttribute("src",data.sprites.front_default);
 }
 
 Button.addEventListener("click",()=>{
     pokeNumber = searchBar.value;
     getdata(pokeNumber);
+})
+document.querySelector("#NextPok").addEventListener("click",()=>{
+    document.querySelector("#typeD").innerHTML = "";
+    abilitiesB.innerHTML = "";
+    getdata(ID+1);
+})
+document.querySelector("#PrevPok").addEventListener("click",()=>{
+    document.querySelector("#typeD").innerHTML = "";
+    abilitiesB.innerHTML = "<h4>hello</h4>";
+    getdata(ID-1);
 })
