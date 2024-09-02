@@ -1,0 +1,137 @@
+@font-face {
+    font-family: poke;
+    src: url(fonts/TT\ Firs\ Neue\ Trial\ Regular.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5E4E9;
+    font-family: poke;
+}
+
+.card2
+{
+    width: 250px;
+    min-height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.card2 .name
+{
+    margin-top: 10px;
+    font-weight: 650;
+}
+.card2 .number
+{
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: 1000;
+}
+.card2 .pokeimage
+{
+    width: 70%;
+    height: 200px;
+    background-color: #BBD9D7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card2 .pokeimage img
+{
+    width: 150px;
+    height: 150px;
+}
+.card2 .details
+{
+    width: 80%;
+}
+.card2 .details .infoMenu
+{
+    width: 100%;
+    margin-top:15px;
+    display: flex;
+    gap: 10px;
+}
+.detailBox
+{
+    width: 70%;
+}
+.detailBox .Box
+{
+    width: 100%;
+    height: 100%;
+}
+.detailBox .forms,.detailBox .Stats,.detailBox .Types
+{
+    display: none;
+}
+.detailBox .Detail
+{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(164, 228, 241);
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,33%);
+    min-height: 130px;
+}
+
+#PreviousPage
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(205, 212, 205);
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    cursor: pointer;
+}
+#PrevPok
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(205, 212, 205);
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    cursor: pointer;
+}
+#NextPok
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(205, 212, 205);
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
